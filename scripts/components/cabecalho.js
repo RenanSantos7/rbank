@@ -33,7 +33,7 @@ export default function cabecalho() {
                 <a href="${urlPaginas}abrir-conta-form.html" class="cabecalho-lista__item-botao cabecalho-lista__item-botao--azul">Abrir conta</a>
             </li>
             <li class="cabecalho-lista__item">
-                <a href="${urlPaginas}conta.html" class="cabecalho-lista__item-botao">Acessar conta</a>
+                <a href="${urlPaginas}login.html" class="cabecalho-lista__item-botao">Acessar conta</a>
             </li>
         </ul>
     `
