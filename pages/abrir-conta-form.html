@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rbank - Abra sua conta</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/formulario.css">
+</head>
+
+<body>
+    <header class="cabecalho"></header>
+
+    <section class="banner">
+        <h3 class="banner__titulo">Moniconta é o primeiro passo para a liberdade financeira!</h3>
+    </section>
+
+    <main class="container">
+        <nav class="breadcrumb" data-passo="1"></nav>
+
+        <section class="formulario">
+            <div class="formulario__container">
+                <img src="../img/status-1.png" alt="Etapa um de três" class="formulario__etapas">
+                <h2 class="formulario__titulo-texto">Preencha os campos abaixo para criar sua conta corrente!</h2>
+            </div>
+             
+            <form class="principal__formulario" data-formulario>
+                <!-- Campo de Nome -->
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="campo__escrita" minlength="5" required />
+                    <div class="mensagem-erro"></span>
+                </fieldset>
+
+                <!-- Campo de Email -->
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="email">E-mail</label>
+                    <input type="email" name="email" id="email" class="campo__escrita" minlength="5" required />
+                    <div class="mensagem-erro"></span>
+                </fieldset>
+                
+                <!-- Campo de RG -->
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">RG</label>
+                    <input type="text" name="rg" id="rg" class="campo__escrita campo__escrita--menor" required />
+                    <div class="mensagem-erro"></span>
+                </fieldset>
+                
+                <!-- Campo de CPF -->
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
+                    <input type="text" name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
+                    <div class="mensagem-erro"></span>
+                </fieldset>
+                
+                <!-- Campo de Idade -->
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="aniversario">Data de nascimento</label>
+                    <input type="date" name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" required />
+                    <div class="mensagem-erro"></span>
+                </fieldset>
+                
+                <!-- Aceite dos termos -->
+                <fieldset class="formulario__termos">
+                    <input type="checkbox" name="termos" id="termos" class="termos__input" required />
+                    <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme descrito na Política de Privacidade do banco.</p>
+                    <div class="mensagem-erro"></span>
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar>
+                    <div class="mensagem-erro"></span>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape"></footer>
+    <script src="../scripts/components.js" type="module"></script>
+    <script src="../scripts/script.js" type="module"></script>
+</body>
+
+</html>
